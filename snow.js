@@ -55,7 +55,9 @@ function draw() {
     requestAnimationFrame(draw);
 }
 
+console.log('salam');
 function Start() {
+    console.log('salam');
     this.document.body.appendChild(canvas)
 
     for (let i = 0; i < 33; i++) {
@@ -65,5 +67,6 @@ function Start() {
     draw();
 }
 
-window.addEventListener('load', Start)
+Start()
+// window.addEventListener('load', Start)
 window.addEventListener('resize', Resize)
